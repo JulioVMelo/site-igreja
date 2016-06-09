@@ -1,0 +1,42 @@
+/*------ CSS RESET -----*/
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    font-size: 100%;
+}
+
+img,
+object,
+embed,
+video,
+iframe,
+iframe['style']{
+    max-width:100%;
+    height: auto;
+}
+
+ul{
+    list-style:none;
+}
+
+a{
+    text-decoration: none;
+    color: inherit;
+}
+
+/*------ FIM CSS RESET -----*/
+
+/*----- CSS GERAL -----*/
+body{
+    /*font-family: "helvetica";*/
+    font-family: 'Sintony', sans-serif;
+    color: #fff;
+}
+
+.clear{
+    clear: both;
+}
+/*----- FIM CSS GERAL -----*/
