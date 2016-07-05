@@ -8,15 +8,15 @@
     font-size: 100%;
 }
 
-img,
-object,
-embed,
-video,
-iframe,
-iframe['style']{
-    max-width:100%;
-    height: auto;
-}
+/*img,*/
+/*object,*/
+/*embed,*/
+/*video,*/
+/*iframe,*/
+/*iframe['style']{*/
+    /*max-width:100%;*/
+    /*height: auto;*/
+/*}*/
 
 ul{
     list-style:none;
@@ -39,4 +39,91 @@ body{
 .clear{
     clear: both;
 }
+
+.container{
+    width: 100%;
+    margin: 0 auto;
+}
+
+.content{
+    margin: 0 auto;
+    width: 90%;
+}
 /*----- FIM CSS GERAL -----*/
+
+/*----- HEADER -----*/
+header{
+    width: 100%;
+    background-color:#45362E;
+}
+
+header .content{
+    margin: 0 auto;
+    padding-top: 10px;
+    padding-bottom: 5px;
+}
+
+header h1{
+    width: 90px;
+    float: left;
+}
+header h1 img{
+    width: 100%;
+}
+
+header .btn-mobile{
+    float: right;
+    width: 50px;
+    text-align: right;
+    font-size: 3.2em;
+    padding-top: 10px;
+    height: auto;
+}
+
+header .btn-mobile i{
+    width: 100%;
+    text-align: center;
+}
+
+header .btn-mobile i:hover{
+    color:#2980b9 ;
+}
+
+header .content .menu{
+    padding-top: 10px;
+    display: none;
+}
+
+header .content .menu li{
+    border-top: 2px solid #34495e;
+    font-size: 1.3em;
+    padding-top:10px;
+    padding-bottom: 10px;
+    width: 100%;
+    text-align: center;
+    border-radius: 6px;
+}
+
+header .content .menu li:hover {
+    color: #2c3e50;
+    background-color: white;
+}
+/*----- FIM HEADER -----*/
+
+/*----- APRESENTAÇãO -----*/
+.apresentacao{
+    background-image: url(../img/homem-rezando.jpeg);
+    background-size: cover;
+    height: 280px;
+    background-position: center left  ;
+}
+
+.apresentacao .content p{
+    text-align: center;
+    padding-top: 140px;
+    font-size: 1.3em;
+    font-style: italic;
+    font-weight: 600;
+    color: #fff;
+}
+/*----- FIM APRESENTAÇÃO -----*/
