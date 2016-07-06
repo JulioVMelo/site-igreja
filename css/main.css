@@ -86,7 +86,7 @@ header .btn-mobile i{
 }
 
 header .btn-mobile i:hover{
-    color:#2980b9 ;
+    color:#5B2314 ;
 }
 
 header .content .menu{
@@ -95,7 +95,7 @@ header .content .menu{
 }
 
 header .content .menu li{
-    border-top: 2px solid #34495e;
+    border-top: 2px solid #563D28;
     font-size: 1.3em;
     padding-top:10px;
     padding-bottom: 10px;
@@ -105,7 +105,7 @@ header .content .menu li{
 }
 
 header .content .menu li:hover {
-    color: #2c3e50;
+    color: #45362E;
     background-color: white;
 }
 /*----- FIM HEADER -----*/
@@ -121,9 +121,85 @@ header .content .menu li:hover {
 .apresentacao .content p{
     text-align: center;
     padding-top: 140px;
-    font-size: 1.3em;
+    font-size: 1.2em;
     font-style: italic;
     font-weight: 600;
     color: #fff;
 }
 /*----- FIM APRESENTAÇÃO -----*/
+
+/*----- SOBRE -----*/
+.sobre {
+    background: #563D28;
+    padding-bottom: 30px;
+    padding-top: 30px;
+}
+.sobre h2{
+    text-align: center;
+    color: #fff;
+    font-size: 1.8em;
+}
+
+.sobre p{
+    padding-top: 20px;
+    color: #fff;
+    text-align: justify;
+    font-size: 1.2em;
+}
+/*----- FIM SOBRE -----*/
+/*----- SLIDE IMAGENS -----*/
+.slide-imagens{
+    background: #fff;
+    height: auto;
+}
+.slide-imagens h2{
+    text-align: center;
+    font-size: 1.4em;
+    color: #563D28;
+    padding-bottom: 20px;
+}
+.slide-imagens i{
+    font-size: 2em;
+    color: #563D28;
+    width: 100%;
+    text-align: center;
+    padding-bottom: 20px;
+}
+.slide-imagens .content{
+    height: auto;
+    width: 98%;
+    padding-top: 30px;
+}
+.slide-imagens .content img{
+    max-width: 100%;
+    border-radius: 20px;
+}
+
+/*----- FIM SLIDE IMAGENS -----*/
+/*----- AGENDA -----*/
+.agenda{
+    background-color: #563D28;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    text-align: center;
+}
+.agenda h2{
+    text-align: center;
+    font-size: 1.4em;
+}
+.agenda i{
+    padding-top: 20px;
+    text-align: center;
+    width: 100%;
+    font-size: 2em;
+    padding-bottom: 20px;
+}
+.agenda .dia{
+font-size: 1.2em;
+    padding-top: 15px;
+}
+.agenda .evento{
+    font-weight: bold;
+    font-style: italic;
+}
+/*----- FIM AGENDA -----*/
