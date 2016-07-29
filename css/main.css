@@ -1,3 +1,13 @@
+/*
+    Author : Júlio V. Melo.
+    Site : juliovmelo.com.br
+*/
+
+
+
+/*cor1 #3E2723*/
+/*cor2 #BCAAA4*/
+
 /*------ CSS RESET -----*/
 *{
     margin: 0;
@@ -54,7 +64,7 @@ body{
 /*----- HEADER -----*/
 header{
     width: 100%;
-    background-color:#45362E;
+    background-color:#3E2723;
 }
 
 header .content{
@@ -86,7 +96,7 @@ header .btn-mobile i{
 }
 
 header .btn-mobile i:hover{
-    color:#5B2314 ;
+    color:#BCAAA4 ;
 }
 
 header .content .menu{
@@ -95,32 +105,37 @@ header .content .menu{
 }
 
 header .content .menu li{
-    border-top: 2px solid #563D28;
+    border-top: 2px solid #BCAAA4;
     font-size: 1.3em;
     padding-top:10px;
     padding-bottom: 10px;
-    width: 100%;
     text-align: center;
-    border-radius: 6px;
+    border-radius: 3px;
+}
+header .content .menu ul li a{
+    display: block;
+}
+header .content .menu ul li:hover{
+    color: #fff;
 }
 
-header .content .menu li:hover {
-    color: #45362E;
-    background-color: white;
+header .content .menu ul li:active{
+    color: #3E2723;
+    background-color: #BCAAA4;
 }
 /*----- FIM HEADER -----*/
 
 /*----- APRESENTAÇãO -----*/
-.apresentacao{
+.apresentacao {
     background-image: url(../img/homem-rezando.jpeg);
     background-size: cover;
     height: 280px;
-    background-position: center left  ;
+    background-position: center left;
 }
 
 .apresentacao .content p{
     text-align: center;
-    padding-top: 140px;
+    padding-top: 120px;
     font-size: 1.2em;
     font-style: italic;
     font-weight: 600;
@@ -130,7 +145,7 @@ header .content .menu li:hover {
 
 /*----- SOBRE -----*/
 .sobre {
-    background: #563D28;
+    background: #3E2723;
     padding-bottom: 30px;
     padding-top: 30px;
 }
@@ -154,13 +169,13 @@ header .content .menu li:hover {
 }
 .slide-imagens h2{
     text-align: center;
-    font-size: 1.4em;
-    color: #563D28;
+    font-size: 1.8em;
+    color: #3E2723;
     padding-bottom: 20px;
 }
 .slide-imagens i{
     font-size: 2em;
-    color: #563D28;
+    color: #3E2723;
     width: 100%;
     text-align: center;
     padding-bottom: 20px;
@@ -178,7 +193,7 @@ header .content .menu li:hover {
 /*----- FIM SLIDE IMAGENS -----*/
 /*----- AGENDA -----*/
 .agenda{
-    background-color: #563D28;
+    background-color: #3E2723;
     padding-top: 30px;
     padding-bottom: 30px;
     text-align: center;
@@ -203,3 +218,405 @@ font-size: 1.2em;
     font-style: italic;
 }
 /*----- FIM AGENDA -----*/
+/*----- PASSAGEM BIBLICA -----*/
+.passagem-biblica{
+    background:url("../img/bg-passagem.jpg");
+    background-size: cover;
+}
+
+.passagem-biblica p{
+    font-style: italic;
+    font-weight: bold;
+    font-size: 1.4em;
+    padding-top: 70px;
+    padding-bottom: 70px;
+    text-align: center;
+    color: #fff;
+}
+/*----- FIM PASSAGEM BIBLICA -----*/
+/*----- FOTOS -----*/
+.fotos{
+    color: #3E2723;
+    background-color: #fff;
+}
+.fotos h2{
+    padding-top: 30px;
+    color: #3E2723;
+    font-size: 1.8em;
+    text-align: center;
+    padding-bottom: 10px;
+    margin-bottom: 20px;
+    border-bottom: groove 2px #BCAAA4;
+}
+.fotos .img-profile{
+    background-color: #fff;
+    margin-bottom: 40px;
+    text-align: center;
+    box-shadow: 0px 5px 5px 3px rgba(0,0,0,.14),0 3px 1px -2px rgba(0,0,0,.2),0 1px 5px 0 rgba(0,0,0,.12);}
+.fotos .img-profile p{
+    width: 90%;
+    margin: 0 auto;
+    border-radius: 15px;
+    padding-top: 15px;
+    padding-bottom: 20px;
+    text-align: justify;
+}
+.fotos img{
+    max-width: 65%;
+    text-align: center;
+    padding-top: 10px;
+}
+.fotos .links ul li{
+    display: inline;
+    cursor: pointer;
+    padding-right: 5px;
+}
+.fotos .links img{
+    width:40px;
+    height: auto;
+}
+.fotos .links ul li:last-of-type {
+    padding-right: 0;
+}
+/*----- FIM FOTOS -----*/
+/*----- MAPA -----*/
+.map{text-align: center;
+    background: url("../img/mapa.png");
+    background-size: cover;
+    height: 200px;
+}
+.map button{
+    margin-top: 90px;
+    padding: 10px;
+    color: #fff;
+    background-color: #c0392b;
+    border-radius: 7px;
+    border: none;
+    box-shadow: 0px 5px 5px 3px rgba(0,0,0,.14),0 3px 1px -2px rgba(0,0,0,.2),0 1px 5px 0 rgba(0,0,0,.12);
+    transition: all 1s ease-in-out;
+    -moz-transition: all 1s ease-in-out;
+
+}
+
+.map button i{
+    padding-left: 10px;
+}
+.map button:hover{
+    background-color: #fff;
+    color:#c0392b ;
+}
+/*----- FIM MAPA -----*/
+/*----- CONTATO -----*/
+.contato {
+    background-color: #3E2723;
+    margin-top: 5px;
+    padding-bottom: 20px
+}
+.contato h2{
+    text-align: left;
+    font-size: 1.4em;
+    color: #fff;
+    padding-top:55px;
+    border-bottom: 1px solid #fff;
+    padding-bottom: 5px;
+    margin-bottom: 20px;
+}
+
+.contato form input{
+    margin-bottom: 10px;
+    width: 100%;
+    margin-top: 5px;
+    border-radius: 3px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    padding-left: 10px;
+}
+.contato form input:focus{
+    border: 2px solid #c0392b;
+}
+
+.contato form textarea{
+    margin-bottom: 20px;
+    width: 100%;
+    margin-top: 5px;
+    resize: vertical;
+    font-size: 1.4em;
+    padding-left: 10px;
+}
+.contato form textarea:focus{
+    border: 2px solid #c0392b;
+
+}
+.contato form input[type="submit"]{
+    width: 100px;
+    border-radius: 3px;
+    background-color: #ffffff;
+    color: #3E2723;
+    box-shadow: 0px 5px 5px 3px rgba(0,0,0,.14),0 3px 1px -2px rgba(0,0,0,.2),0 1px 5px 0 rgba(0,0,0,.12);
+    padding-left: 0;
+    transition: background-color 0.7s;
+    border: none;
+}
+.contato form input[type="submit"]:hover{
+    background-color: #3E2723;
+    color: #fff;
+}
+/*----- FIM CONTATO -----*/
+/*----- RODAPÉ -----*/
+.rodape{
+    padding-top: 10px;
+    color: #fff;
+    padding-bottom: 20px;
+    background-color: #3E2723;
+    border-top: 1px solid #BCAAA4;
+}
+.rodape .atendimento i{
+    padding-top: 7px;
+    width: 100%;
+}
+.rodape .atendimento i p{
+    padding-left: 10px;
+}
+.rodape .atendimento p{
+    display: inline;
+}
+.rodape .redes-sociais{
+    margin-top: 20px;
+}
+.rodape p{
+    padding-bottom: 10px;
+}
+.rodape .redes-sociais ul li{
+    display: inline;
+    padding-left: 5px;
+    cursor: pointer;
+}
+.rodape .redes-sociais ul li:first-of-type{
+    padding-left: 0px;
+}
+.rodape .redes-sociais img{
+    width: 35px;
+}
+/*----- FIM RODAPÉ -----*/
+/*----- Autor -----*/
+.autor{
+    padding-top: 10px;
+    padding-bottom: 10px;
+    background-color: #000;
+    text-align: center;
+    font-size: 0.8em;
+}
+.autor ul li img{
+    width: 20px;
+}
+.autor ul li {
+    display: inline;
+    padding-left: 10px;
+    cursor: pointer;
+}
+.autor ul li:first-of-type{
+    padding-left: 0;
+}
+/*----- FIM Autor -----*/
+
+/*----- INICIO MEDIAS QUERIES -----*/
+@media screen and (min-width:620px){
+    .fotos .content{
+        width: 90%;
+    }
+    .fotos h2{
+        text-align: left;
+    }
+    .fotos  .img-profile{
+        width: 47%;
+        float: left;
+    }
+    .fotos .img-profile:nth-of-type(2n+2){
+        float: right;
+    }
+
+    .map{
+        clear: both;
+    }
+
+}
+
+@media screen and (min-width: 840px) {
+
+    header {
+        background-color: transparent;
+    }
+
+    header .content .clear {
+        clear: none;
+    }
+
+    header .btn-mobile {
+        display: none;
+    }
+
+    .header h1 {
+        float: left;
+    }
+
+    header .menu {
+        display: inline-block !important;
+        float: right;
+        width: 80%;
+        margin-top: 30px;
+        text-align: right;
+    }
+
+    header .content .menu li {
+        margin: 0;
+        font-size: 1.3em;
+        font-weight: 600;
+        display: inline;
+        border-top: none;
+        padding: 0;
+        margin-left: 5%;
+        transition: color 0.4s;
+    }
+
+    header .content .menu li a {
+        display: inline !important;
+        color: #fff;
+        transition: color 0.3s;
+    }
+
+    header .content .menu li a:hover {
+        color: #3E2723;
+    }
+
+    header .content .menu li:hover {
+
+        background-color: inherit;
+    }
+
+    .bg {
+        background-image: url("../img/igreja.jpeg");
+        z-index: 1;
+    }
+
+    .apresentacao {
+        background-image: none;
+    }
+
+    .apresentacao{
+        height: 650px;
+    }
+    .apresentacao .content p{
+        padding-top: 400px;
+    }
+    .bg{
+    background-image: url("../img/igreja.jpeg");
+    background-size: cover;
+    }
+    .sobre .content {
+        width: 70%;
+    }
+
+    .slide-imagens .content {
+        width: 70%;
+    }
+
+    .contato .content {
+        width: 60%;
+    }
+
+    .rodape .content {
+        width: 60%;
+    }
+
+    .rodape .content {
+        margin-top: 20px;
+    }
+
+    .rodape .content .atendimento {
+        width: 45%;
+        float: left;
+    }
+
+    .rodape .content .redes-sociais {
+        float: right;
+        margin-top: 0;
+    }
+}
+
+@media screen and (min-width: 1200px) {
+        header .content{
+            width: 76%;
+        }
+        .sobre .content{
+            width: 54%;
+            padding-top: 40px;
+            padding-bottom: 40px;
+        }
+
+        .apresentacao .content p{
+            font-size: 1.8em;
+        }
+        .fotos .content{
+            width: 60%;
+        }
+        .contato .content{
+            width: 45%;
+        }
+        .rodape .content{
+            width: 45%;
+        }
+        .map {
+            height: 300px;
+        }
+        .map button{
+            margin-top: 140px;
+        }
+}
+@media screen and (min-width: 1500px) {
+    .bg{
+        background-attachment: fixed;
+    }
+    .apresentacao .content p{
+        padding-top: 500px;
+    }
+    .apresentacao{
+        height: 750px;
+    }
+    .sobre .content{
+        width: 40%;
+    }
+    .slide-imagens .content{
+        width: 50%;
+    }
+    .passagem-biblica{
+        height: 250px;
+        background-size: 100%;
+    }
+    .passagem-biblica  p{
+        font-size: 1.6em;
+        padding-top: 120px;
+    }
+    .sobre .content{
+
+        padding-top: 60px;
+        padding-bottom: 60px;
+    }
+    .fotos .img-profile{
+        width: 30%;
+        margin-right: 5%;
+    }
+    .fotos .img-profile:nth-of-type(2n){
+        margin-right: 0;
+    }
+
+    .fotos .img-profile:nth-of-type(4n){
+        float: left;
+    }
+    .contato .content{
+        width: 35%;
+    }
+    .rodape .content{
+        width: 35%;
+    }
+
+}

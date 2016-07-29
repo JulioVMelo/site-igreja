@@ -9,4 +9,9 @@ $(document).ready(function(){
     $('.content .slide').cycle({
         fx: 'fade'
     });
+
+    $('.scroll').click(function(event){
+        event.preventDefault();
+        $('html,body').animate({scrollTop:$(this.hash).offset().top}, 1400);
+    });
 });
