@@ -14,4 +14,12 @@ $(document).ready(function(){
         event.preventDefault();
         $('html,body').animate({scrollTop:$(this.hash).offset().top}, 1400);
     });
+
+    $('.slide ul').cycle({
+       fx: 'fade',
+        speed:2000,
+        timeout:8000,
+        next:'#next',
+        prev: '#back'
+    });
 });

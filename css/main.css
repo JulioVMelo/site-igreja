@@ -164,8 +164,7 @@ header .content .menu ul li:active{
 /*----- FIM SOBRE -----*/
 /*----- SLIDE IMAGENS -----*/
 .slide-imagens{
-    background: #fff;
-    height: auto;
+    background: #BCAAA4;
 }
 .slide-imagens h2{
     text-align: center;
@@ -186,8 +185,13 @@ header .content .menu ul li:active{
     padding-top: 30px;
 }
 .slide-imagens .content img{
+
     max-width: 100%;
-    border-radius: 20px;
+
+    border-radius: 5px;
+    border: 5px solid #3E2723;
+    margin-bottom: 10px;
+    box-shadow: 20px 10px 15px #3e2723;
 }
 
 /*----- FIM SLIDE IMAGENS -----*/
@@ -235,11 +239,11 @@ font-size: 1.2em;
 }
 /*----- FIM PASSAGEM BIBLICA -----*/
 /*----- FOTOS -----*/
-.fotos{
+.equipe{
     color: #3E2723;
     background-color: #fff;
 }
-.fotos h2{
+.equipe h2{
     padding-top: 30px;
     color: #3E2723;
     font-size: 1.8em;
@@ -248,42 +252,47 @@ font-size: 1.2em;
     margin-bottom: 20px;
     border-bottom: groove 2px #BCAAA4;
 }
-.fotos .img-profile{
-    background-color: #fff;
-    margin-bottom: 40px;
+.equipe .img-profile{
     text-align: center;
-    box-shadow: 0px 5px 5px 3px rgba(0,0,0,.14),0 3px 1px -2px rgba(0,0,0,.2),0 1px 5px 0 rgba(0,0,0,.12);}
-.fotos .img-profile p{
-    width: 90%;
+    width: 80%;
     margin: 0 auto;
-    border-radius: 15px;
-    padding-top: 15px;
-    padding-bottom: 20px;
-    text-align: justify;
 }
-.fotos img{
-    max-width: 65%;
+.equipe .content .img-profile .nome{
+    font-weight: bold;
+    padding-bottom: 2.5px;
+    text-transform: uppercase;
     text-align: center;
-    padding-top: 10px;
 }
-.fotos .links ul li{
-    display: inline;
-    cursor: pointer;
-    padding-right: 5px;
+
+.equipe .content .img-profile .funcao{
+    border-top: 1px solid #d35400;
+    padding-top: 2.5px;
+    font-style: italic;
+    width: 140px;
+    margin: 0 auto;
 }
-.fotos .links img{
-    width:40px;
+.equipe img{
+    border-radius: 50%;
+    width: 170px;
     height: auto;
+    margin-bottom: 30px;
+    margin-top: 60px;
+    border: 5px solid #BCAAA4;
+    box-shadow: 10px 5px 15px #ccc;
+    transition: border 0.3s;
 }
-.fotos .links ul li:last-of-type {
-    padding-right: 0;
+.equipe img:hover{
+    border: 10px solid #3E2723;
+
 }
+
 /*----- FIM FOTOS -----*/
 /*----- MAPA -----*/
 .map{text-align: center;
     background: url("../img/mapa.png");
     background-size: cover;
     height: 200px;
+    margin-top: 50px;
 }
 .map button{
     margin-top: 90px;
@@ -294,8 +303,6 @@ font-size: 1.2em;
     border: none;
     box-shadow: 0px 5px 5px 3px rgba(0,0,0,.14),0 3px 1px -2px rgba(0,0,0,.2),0 1px 5px 0 rgba(0,0,0,.12);
     transition: all 1s ease-in-out;
-    -moz-transition: all 1s ease-in-out;
-
 }
 
 .map button i{
@@ -332,7 +339,7 @@ font-size: 1.2em;
     padding-left: 10px;
 }
 .contato form input:focus{
-    border: 2px solid #c0392b;
+    border: 2px solid #BCAAA4;
 }
 
 .contato form textarea{
@@ -344,7 +351,7 @@ font-size: 1.2em;
     padding-left: 10px;
 }
 .contato form textarea:focus{
-    border: 2px solid #c0392b;
+    border: 2px solid #BCAAA4;
 
 }
 .contato form input[type="submit"]{
@@ -420,28 +427,41 @@ font-size: 1.2em;
 /*----- FIM Autor -----*/
 
 /*----- INICIO MEDIAS QUERIES -----*/
-@media screen and (min-width:620px){
-    .fotos .content{
-        width: 90%;
-    }
-    .fotos h2{
-        text-align: left;
-    }
-    .fotos  .img-profile{
-        width: 47%;
+@media screen and (min-width:480px) {
+    .equipe .img-profile{
+        width: 40%;
         float: left;
+        margin-left: 6%;
     }
-    .fotos .img-profile:nth-of-type(2n+2){
+    .equipe .img-profile:nth-of-type(2n){
+        margin-right: 6%;
+        margin-left: 0;
         float: right;
-    }
-
-    .map{
-        clear: both;
+        text-align: center;
     }
 
 }
 
 @media screen and (min-width: 840px) {
+    .equipe .content{
+        width: 75%;
+    }
+    .equipe .img-profile{
+        width: 30%;
+        margin-left: 0;
+        margin-right: 5%;
+    }
+    .equipe .img-profile:nth-of-type(2n){
+        margin-right: 5%;
+        float: left;
+        text-align: center;
+    }
+    .equipe .img-profile:nth-of-type(3n){
+        margin-right: 0;
+        margin-left: 0;
+        float: left;
+        text-align: center;
+    }
 
     header {
         background-color: transparent;
@@ -519,6 +539,20 @@ font-size: 1.2em;
     .slide-imagens .content {
         width: 70%;
     }
+    .agenda .content{
+        width: 50%;
+    }
+    .agenda{
+        padding-bottom: 80px;
+    }
+    .agenda .col1{
+        width: 47%;
+        float: left;
+    }
+    .agenda .col2{
+        width: 47%;
+        float: right;
+    }
 
     .contato .content {
         width: 60%;
@@ -556,7 +590,7 @@ font-size: 1.2em;
         .apresentacao .content p{
             font-size: 1.8em;
         }
-        .fotos .content{
+        .equipe .content{
             width: 60%;
         }
         .contato .content{
@@ -597,26 +631,36 @@ font-size: 1.2em;
         padding-top: 120px;
     }
     .sobre .content{
-
         padding-top: 60px;
         padding-bottom: 60px;
-    }
-    .fotos .img-profile{
-        width: 30%;
-        margin-right: 5%;
-    }
-    .fotos .img-profile:nth-of-type(2n){
-        margin-right: 0;
-    }
-
-    .fotos .img-profile:nth-of-type(4n){
-        float: left;
     }
     .contato .content{
         width: 35%;
     }
     .rodape .content{
         width: 35%;
+    }
+    .equipe .content{
+        width: 60%;
+    }
+    .equipe .img-profile{
+        width: 20%;
+        margin-left: 0;
+        margin-right: 6%;
+        padding-bottom: 30px;
+     }
+    .equipe .img-profile:nth-of-type(3n){
+        margin-right: 6%;
+        float: left;
+    }
+    .equipe .img-profile:nth-of-type(3n+2){
+        margin-right: 6%;
+    }
+
+    .equipe .img-profile:nth-of-type(4n){
+        margin-right: 0;
+        float: right;
+
     }
 
 }
